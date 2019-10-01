@@ -1,0 +1,12 @@
+set xrange [0:]
+set yrange [0-1e-4:]
+set xlabel "h"
+set ylabel "m"
+set key left top
+
+set term png
+set output "fig.png"
+
+p \
+"dat_L50" u 1:2 w lp ti "L=50", \
+"dat_L100" u 1:2 w lp ti "L=100"
